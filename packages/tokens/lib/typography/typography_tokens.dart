@@ -7,6 +7,6 @@ class TypographyTokens {
   static const double fontSize40 = 40;
   static const double fontWeight400 = 400;
   static const double fontWeight700 = 700;
-  static const String fontFamilyarial = "Arial";
-  static const String fontFamilyinter = "Inter";
+  static const String fontFamilyArial = "Arial";
+  static const String fontFamilyInter = "Inter";
 }
