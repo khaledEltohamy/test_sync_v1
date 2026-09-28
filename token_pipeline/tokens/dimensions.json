@@ -1,0 +1,404 @@
+{
+  "width": {
+    "3": {
+      "$type": "number",
+      "$value": 3
+    },
+    "12": {
+      "$type": "number",
+      "$value": 12
+    },
+    "13": {
+      "414214134216309": {
+        "$type": "number",
+        "$value": 13.414214134216309
+      }
+    },
+    "16": {
+      "$type": "number",
+      "$value": 16
+    },
+    "24": {
+      "$type": "number",
+      "$value": 24
+    },
+    "32": {
+      "$type": "number",
+      "$value": 32
+    },
+    "37": {
+      "$type": "number",
+      "$value": 37
+    },
+    "38": {
+      "$type": "number",
+      "$value": 38
+    },
+    "42": {
+      "$type": "number",
+      "$value": 42
+    },
+    "44": {
+      "$type": "number",
+      "$value": 44
+    },
+    "51": {
+      "$type": "number",
+      "$value": 51
+    },
+    "56": {
+      "$type": "number",
+      "$value": 56
+    },
+    "67": {
+      "$type": "number",
+      "$value": 67
+    },
+    "74": {
+      "$type": "number",
+      "$value": 74
+    },
+    "83": {
+      "$type": "number",
+      "$value": 83
+    },
+    "85": {
+      "$type": "number",
+      "$value": 85
+    },
+    "88": {
+      "$type": "number",
+      "$value": 88
+    },
+    "108": {
+      "$type": "number",
+      "$value": 108
+    },
+    "114": {
+      "$type": "number",
+      "$value": 114
+    },
+    "122": {
+      "$type": "number",
+      "$value": 122
+    },
+    "136": {
+      "$type": "number",
+      "$value": 136
+    },
+    "138": {
+      "$type": "number",
+      "$value": 138
+    },
+    "172": {
+      "$type": "number",
+      "$value": 172
+    },
+    "198": {
+      "90908813476562": {
+        "$type": "number",
+        "$value": 198.90908813476562
+      }
+    },
+    "200": {
+      "$type": "number",
+      "$value": 200
+    },
+    "256": {
+      "$type": "number",
+      "$value": 256
+    },
+    "272": {
+      "$type": "number",
+      "$value": 272
+    },
+    "306": {
+      "$type": "number",
+      "$value": 306
+    },
+    "312": {
+      "$type": "number",
+      "$value": 312
+    },
+    "316": {
+      "$type": "number",
+      "$value": 316
+    },
+    "320": {
+      "$type": "number",
+      "$value": 320
+    },
+    "354": {
+      "$type": "number",
+      "$value": 354
+    },
+    "364": {
+      "$type": "number",
+      "$value": 364
+    },
+    "385": {
+      "6666564941406": {
+        "$type": "number",
+        "$value": 385.6666564941406
+      },
+      "66668701171875": {
+        "$type": "number",
+        "$value": 385.66668701171875
+      }
+    },
+    "402": {
+      "$type": "number",
+      "$value": 402
+    },
+    "412": {
+      "$type": "number",
+      "$value": 412
+    },
+    "430": {
+      "$type": "number",
+      "$value": 430
+    },
+    "433": {
+      "6666564941406": {
+        "$type": "number",
+        "$value": 433.6666564941406
+      },
+      "66668701171875": {
+        "$type": "number",
+        "$value": 433.66668701171875
+      }
+    },
+    "444": {
+      "$type": "number",
+      "$value": 444
+    },
+    "576": {
+      "$type": "number",
+      "$value": 576
+    },
+    "618": {
+      "5": {
+        "$type": "number",
+        "$value": 618.5
+      }
+    },
+    "666": {
+      "5": {
+        "$type": "number",
+        "$value": 666.5
+      }
+    },
+    "1365": {
+      "$type": "number",
+      "$value": 1365
+    },
+    "1429": {
+      "$type": "number",
+      "$value": 1429
+    },
+    "2308": {
+      "$type": "number",
+      "$value": 2308
+    },
+    "2532": {
+      "$type": "number",
+      "$value": 2532
+    }
+  },
+  "height": {
+    "3": {
+      "$type": "number",
+      "$value": 3
+    },
+    "12": {
+      "$type": "number",
+      "$value": 12
+    },
+    "13": {
+      "414214134216309": {
+        "$type": "number",
+        "$value": 13.414214134216309
+      }
+    },
+    "15": {
+      "$type": "number",
+      "$value": 15
+    },
+    "16": {
+      "$type": "number",
+      "$value": 16
+    },
+    "18": {
+      "$type": "number",
+      "$value": 18
+    },
+    "19": {
+      "$type": "number",
+      "$value": 19
+    },
+    "24": {
+      "$type": "number",
+      "$value": 24
+    },
+    "31": {
+      "$type": "number",
+      "$value": 31
+    },
+    "32": {
+      "$type": "number",
+      "$value": 32
+    },
+    "42": {
+      "$type": "number",
+      "$value": 42
+    },
+    "44": {
+      "$type": "number",
+      "$value": 44
+    },
+    "47": {
+      "$type": "number",
+      "$value": 47
+    },
+    "48": {
+      "$type": "number",
+      "$value": 48
+    },
+    "50": {
+      "$type": "number",
+      "$value": 50
+    },
+    "62": {
+      "$type": "number",
+      "$value": 62
+    },
+    "64": {
+      "$type": "number",
+      "$value": 64
+    },
+    "69": {
+      "$type": "number",
+      "$value": 69
+    },
+    "72": {
+      "$type": "number",
+      "$value": 72
+    },
+    "93": {
+      "$type": "number",
+      "$value": 93
+    },
+    "96": {
+      "$type": "number",
+      "$value": 96
+    },
+    "141": {
+      "$type": "number",
+      "$value": 141
+    },
+    "146": {
+      "$type": "number",
+      "$value": 146
+    },
+    "150": {
+      "$type": "number",
+      "$value": 150
+    },
+    "165": {
+      "$type": "number",
+      "$value": 165
+    },
+    "180": {
+      "$type": "number",
+      "$value": 180
+    },
+    "198": {
+      "$type": "number",
+      "$value": 198
+    },
+    "229": {
+      "$type": "number",
+      "$value": 229
+    },
+    "232": {
+      "$type": "number",
+      "$value": 232
+    },
+    "287": {
+      "$type": "number",
+      "$value": 287
+    },
+    "311": {
+      "$type": "number",
+      "$value": 311
+    },
+    "317": {
+      "$type": "number",
+      "$value": 317
+    },
+    "334": {
+      "$type": "number",
+      "$value": 334
+    },
+    "372": {
+      "$type": "number",
+      "$value": 372
+    },
+    "396": {
+      "$type": "number",
+      "$value": 396
+    },
+    "409": {
+      "$type": "number",
+      "$value": 409
+    },
+    "412": {
+      "$type": "number",
+      "$value": 412
+    },
+    "455": {
+      "$type": "number",
+      "$value": 455
+    },
+    "514": {
+      "$type": "number",
+      "$value": 514
+    },
+    "516": {
+      "$type": "number",
+      "$value": 516
+    },
+    "576": {
+      "$type": "number",
+      "$value": 576
+    },
+    "874": {
+      "$type": "number",
+      "$value": 874
+    },
+    "932": {
+      "$type": "number",
+      "$value": 932
+    },
+    "1348": {
+      "$type": "number",
+      "$value": 1348
+    },
+    "1358": {
+      "$type": "number",
+      "$value": 1358
+    },
+    "1626": {
+      "$type": "number",
+      "$value": 1626
+    },
+    "2372": {
+      "$type": "number",
+      "$value": 2372
+    },
+    "2800": {
+      "$type": "number",
+      "$value": 2800
+    }
+  }
+}

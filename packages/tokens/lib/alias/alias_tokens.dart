@@ -1,77 +1,152 @@
-// GENERATED FILE - DO NOT EDIT BY HAND.
-// Galaxy generated alias design tokens.
-import 'package:flutter/material.dart';
+// GENERATED FILE - DO NOT EDIT
+// ignore_for_file: constant_identifier_names
 
-abstract final class AliasTokens {
-  static dynamic get background_primary => GrayTokens.v_0;
-  static dynamic get background_secondary => GrayTokens.v_50;
-  static dynamic get background_tertiary => GrayTokens.v_100;
-  static dynamic get background_inverse => GrayTokens.v_900;
-  static dynamic get background_disabled => GrayTokens.v_100;
-  static dynamic get surface_primary => GrayTokens.v_0;
-  static dynamic get surface_secondary => GrayTokens.v_50;
-  static dynamic get surface_tertiary => GrayTokens.v_100;
-  static dynamic get text_primary => GrayTokens.v_900;
-  static dynamic get text_secondary => GrayTokens.v_600;
-  static dynamic get text_tertiary => GrayTokens.v_500;
-  static dynamic get text_disabled => GrayTokens.v_400;
-  static dynamic get text_inverse => GrayTokens.v_0;
-  static dynamic get text_placeholder => GrayTokens.v_400;
-  static dynamic get icon_primary => GrayTokens.v_900;
-  static dynamic get icon_secondary => GrayTokens.v_500;
-  static dynamic get icon_disabled => GrayTokens.v_400;
-  static dynamic get icon_inverse => GrayTokens.v_0;
-  static dynamic get border_primary => GrayTokens.v_200;
-  static dynamic get border_secondary => GrayTokens.v_100;
-  static dynamic get border_focus => PrimaryTokens.v_500;
-  static dynamic get border_tertiary => GrayTokens.v_300;
-  static dynamic get border_interactive => PrimaryTokens.v_500;
-  static dynamic get divider_default => GrayTokens.v_200;
-  static dynamic get button_primary_background => PrimaryTokens.v_500;
-  static dynamic get button_primary_hover => PrimaryTokens.v_600;
-  static dynamic get button_primary_pressed => PrimaryTokens.v_700;
-  static dynamic get button_primary_text => GrayTokens.v_0;
-  static dynamic get button_primary_disabled => GrayTokens.v_300;
-  static dynamic get button_primary_border => PrimaryTokens.v_500;
-  static dynamic get button_secondary_background => GrayTokens.v_500;
-  static dynamic get button_secondary_text => GrayTokens.v_900;
-  static dynamic get button_secondary_border => GreenTokens.v_700;
-  static dynamic get button_tertiary_background => GrayTokens.v_0;
-  static dynamic get button_tertiary_text => GreenTokens.v_500;
-  static dynamic get button_tertiary_border => GreenTokens.v_500;
-  static dynamic get button_tertiary_selected => GreenTokens.v_500;
-  static dynamic get button_success_background => GreenTokens.v_100;
-  static dynamic get button_success_text => GrayTokens.v_0;
-  static dynamic get button_success_border => GreenTokens.v_500;
-  static dynamic get button_error_background => RedTokens.v_500;
-  static dynamic get button_error_text => GrayTokens.v_0;
-  static dynamic get button_error_border => RedTokens.v_700;
-  static dynamic get status_success_background => GreenTokens.v_100;
-  static dynamic get status_success_content => GreenTokens.v_700;
-  static dynamic get status_error_background => RedTokens.v_100;
-  static dynamic get status_error_content => RedTokens.v_700;
-  static dynamic get status_warning_background => YellowTokens.v_100;
-  static dynamic get status_warning_content => YellowTokens.v_700;
-  static dynamic get status_info_background => BlueTokens.v_100;
-  static dynamic get status_info_content => BlueTokens.v_700;
-  static dynamic get input_background => GrayTokens.v_0;
-  static dynamic get input_background_disabled => GrayTokens.v_100;
-  static dynamic get input_border => GrayTokens.v_200;
-  static dynamic get input_border_cloudy => NeutralTokens.v_300;
-  static dynamic get input_border_disabled => GrayTokens.v_300;
-  static dynamic get input_placeholder => GrayTokens.v_400;
-  static dynamic get input_text => TextTokens.primary;
-  static dynamic get radio_background => GrayTokens.v_0;
-  static dynamic get radio_background_cloudy => GrayTokens.v_100;
-  static dynamic get radio_border => GrayTokens.v_200;
-  static dynamic get radio_border_cloudy => GrayTokens.v_300;
-  static dynamic get radio_selected => PrimaryTokens.v_800;
-  static dynamic get radio_selected_cloudy => GreenTokens.v_500;
-  static dynamic get radio_selected_border => GreenTokens.v_500;
-  static dynamic get focus_ring => PrimaryTokens.v_400;
-  static dynamic get focus_border => PrimaryTokens.v_500;
-  static dynamic get card_background => SurfaceTokens.primary;
-  static dynamic get card_content => TextTokens.primary;
-  static dynamic get card_body => TextTokens.secondary;
-  static dynamic get card_border => BorderTokens.primary;
+import 'dart:ui';
+import '../global/global_tokens.dart';
+
+class AliasTokens {
+  AliasTokens._();
+
+  static const Color backgroundPrimary = GlobalTokens.gray0;
+
+  static const Color backgroundSecondary = GlobalTokens.gray50;
+
+  static const Color backgroundTertiary = GlobalTokens.gray100;
+
+  static const Color backgroundInverse = GlobalTokens.gray900;
+
+  static const Color backgroundDisabled = GlobalTokens.gray100;
+
+  static const Color surfacePrimary = GlobalTokens.gray0;
+
+  static const Color surfaceSecondary = GlobalTokens.gray50;
+
+  static const Color surfaceTertiary = GlobalTokens.gray100;
+
+  static const Color textPrimary = GlobalTokens.gray900;
+
+  static const Color textSecondary = GlobalTokens.gray600;
+
+  static const Color textTertiary = GlobalTokens.gray500;
+
+  static const Color textDisabled = GlobalTokens.gray400;
+
+  static const Color textInverse = GlobalTokens.gray0;
+
+  static const Color textPlaceholder = GlobalTokens.gray400;
+
+  static const Color iconPrimary = GlobalTokens.gray900;
+
+  static const Color iconSecondary = GlobalTokens.gray500;
+
+  static const Color iconDisabled = GlobalTokens.gray400;
+
+  static const Color iconInverse = GlobalTokens.gray0;
+
+  static const Color borderPrimary = GlobalTokens.gray200;
+
+  static const Color borderSecondary = GlobalTokens.gray100;
+
+  static const Color borderFocus = GlobalTokens.primary500;
+
+  static const Color borderTertiary = GlobalTokens.gray300;
+
+  static const Color borderInteractive = GlobalTokens.primary500;
+
+  static const Color dividerDefault = GlobalTokens.gray200;
+
+  static const Color buttonPrimaryBackground = GlobalTokens.primary500;
+
+  static const Color buttonPrimaryHover = GlobalTokens.primary600;
+
+  static const Color buttonPrimaryPressed = GlobalTokens.primary700;
+
+  static const Color buttonPrimaryText = GlobalTokens.gray0;
+
+  static const Color buttonPrimaryDisabled = GlobalTokens.gray300;
+
+  static const Color buttonPrimaryBorder = GlobalTokens.primary500;
+
+  static const Color buttonSecondaryBackground = GlobalTokens.gray500;
+
+  static const Color buttonSecondaryText = GlobalTokens.gray900;
+
+  static const Color buttonSecondaryBorder = GlobalTokens.green700;
+
+  static const Color buttonTertiaryBackground = GlobalTokens.gray0;
+
+  static const Color buttonTertiaryText = GlobalTokens.green500;
+
+  static const Color buttonTertiaryBorder = GlobalTokens.green500;
+
+  static const Color buttonTertiarySelected = GlobalTokens.green500;
+
+  static const Color buttonSuccessBackground = GlobalTokens.green100;
+
+  static const Color buttonSuccessText = GlobalTokens.gray0;
+
+  static const Color buttonSuccessBorder = GlobalTokens.green500;
+
+  static const Color buttonErrorBackground = GlobalTokens.red500;
+
+  static const Color buttonErrorText = GlobalTokens.gray0;
+
+  static const Color buttonErrorBorder = GlobalTokens.red700;
+
+  static const Color statusSuccessBackground = GlobalTokens.green100;
+
+  static const Color statusSuccessContent = GlobalTokens.green700;
+
+  static const Color statusErrorBackground = GlobalTokens.red100;
+
+  static const Color statusErrorContent = GlobalTokens.red700;
+
+  static const Color statusWarningBackground = GlobalTokens.yellow100;
+
+  static const Color statusWarningContent = GlobalTokens.yellow700;
+
+  static const Color statusInfoBackground = GlobalTokens.blue100;
+
+  static const Color statusInfoContent = GlobalTokens.blue700;
+
+  static const Color inputBackground = GlobalTokens.gray0;
+
+  static const Color inputBackgroundDisabled = GlobalTokens.gray100;
+
+  static const Color inputBorder = GlobalTokens.gray200;
+
+  static const Color inputBorderCloudy = GlobalTokens.neutral300;
+
+  static const Color inputBorderDisabled = GlobalTokens.gray300;
+
+  static const Color inputPlaceholder = GlobalTokens.gray400;
+
+  static const Color inputText = Color(0xFF111827);
+
+  static const Color radioBackground = GlobalTokens.gray0;
+
+  static const Color radioBackgroundCloudy = GlobalTokens.gray100;
+
+  static const Color radioBorder = GlobalTokens.gray200;
+
+  static const Color radioBorderCloudy = GlobalTokens.gray300;
+
+  static const Color radioSelected = GlobalTokens.primary800;
+
+  static const Color radioSelectedCloudy = GlobalTokens.green500;
+
+  static const Color radioSelectedBorder = GlobalTokens.green500;
+
+  static const Color focusRing = GlobalTokens.primary400;
+
+  static const Color focusBorder = GlobalTokens.primary500;
+
+  static const Color cardBackground = Color(0xFFFFFFFF);
+
+  static const Color cardContent = Color(0xFF111827);
+
+  static const Color cardBody = Color(0xFF4B5563);
+
+  static const Color cardBorder = Color(0xFFE5E7EB);
+
 }
