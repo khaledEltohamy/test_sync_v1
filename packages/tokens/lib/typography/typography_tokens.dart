@@ -1,15 +1,12 @@
-// GENERATED FILE - DO NOT EDIT BY HAND.
-// Galaxy generated typography design tokens.
-
-abstract final class TypographyTokens {
-  static dynamic get font_size_12 => 12;
-  static dynamic get font_size_14 => 14;
-  static dynamic get font_size_16 => 16;
-  static dynamic get font_size_20 => 20;
-  static dynamic get font_size_24 => 24;
-  static dynamic get font_size_40 => 40;
-  static dynamic get font_weight_400 => 400;
-  static dynamic get font_weight_700 => 700;
-  static dynamic get font_family_arial => "Arial";
-  static dynamic get font_family_inter => "Inter";
+class TypographyTokens {
+  static const double fontSize12 = 12;
+  static const double fontSize14 = 14;
+  static const double fontSize16 = 16;
+  static const double fontSize20 = 20;
+  static const double fontSize24 = 24;
+  static const double fontSize40 = 40;
+  static const double fontWeight400 = 400;
+  static const double fontWeight700 = 700;
+  static const String fontFamilyArial = "Arial";
+  static const String fontFamilyInter = "Inter";
 }
