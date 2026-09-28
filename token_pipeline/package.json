@@ -1,0 +1,11 @@
+{
+  "name": "galaxy-token-pipeline",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

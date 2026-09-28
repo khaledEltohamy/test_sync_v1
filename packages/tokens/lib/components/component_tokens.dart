@@ -1,0 +1,61 @@
+// GENERATED FILE - DO NOT EDIT BY HAND.
+// Galaxy generated components design tokens.
+import 'package:flutter/material.dart';
+
+abstract final class ComponentTokens {
+  static dynamic get button_component_primary_background => ButtonTokens.primary_background;
+  static dynamic get button_component_primary_foreground => ButtonTokens.primary_text;
+  static dynamic get button_component_primary_border => ButtonTokens.primary_border;
+  static dynamic get button_component_primary_radius => 4;
+  static dynamic get button_component_secondary_background => ButtonTokens.secondary_background;
+  static dynamic get button_component_secondary_foreground => ButtonTokens.secondary_text;
+  static dynamic get button_component_secondary_border => ButtonTokens.secondary_border;
+  static dynamic get button_component_secondary_radius => 4;
+  static dynamic get button_component_tertiary_background => ButtonTokens.tertiary_background;
+  static dynamic get button_component_tertiary_foreground => ButtonTokens.tertiary_text;
+  static dynamic get button_component_tertiary_border => ButtonTokens.tertiary_border;
+  static dynamic get button_component_tertiary_selected => ButtonTokens.tertiary_selected;
+  static dynamic get button_component_tertiary_radius => 4;
+  static dynamic get button_component_success_background => ButtonTokens.success_background;
+  static dynamic get button_component_success_foreground => ButtonTokens.success_text;
+  static dynamic get button_component_success_border => ButtonTokens.success_border;
+  static dynamic get button_component_success_radius => 12;
+  static dynamic get button_component_error_background => ButtonTokens.error_background;
+  static dynamic get button_component_error_foreground => ButtonTokens.error_text;
+  static dynamic get button_component_error_border => ButtonTokens.error_border;
+  static dynamic get button_component_error_radius => 4;
+  static dynamic get button_component_focus_ring => FocusTokens.ring;
+  static dynamic get textfield_component_background_default => InputTokens.background;
+  static dynamic get textfield_component_background_cloudy => BackgroundTokens.secondary;
+  static dynamic get textfield_component_border_default => InputTokens.border;
+  static dynamic get textfield_component_border_cloudy => InputTokens.border_cloudy;
+  static dynamic get textfield_component_border_focus => FocusTokens.border;
+  static dynamic get textfield_component_label => TextTokens.primary;
+  static dynamic get textfield_component_text => InputTokens.text;
+  static dynamic get textfield_component_placeholder => InputTokens.placeholder;
+  static dynamic get textfield_component_disabled => TextTokens.disabled;
+  static dynamic get textfield_component_radius => 4;
+  static dynamic get textfield_component_padding => 16;
+  static dynamic get radio_component_clear_background => RadioTokens.background;
+  static dynamic get radio_component_clear_border => RadioTokens.border;
+  static dynamic get radio_component_clear_selected => RadioTokens.selected;
+  static dynamic get radio_component_clear_selected_border => RadioTokens.selected_border;
+  static dynamic get radio_component_cloudy_background => RadioTokens.background_cloudy;
+  static dynamic get radio_component_cloudy_border => RadioTokens.border_cloudy;
+  static dynamic get radio_component_cloudy_selected => RadioTokens.selected_cloudy;
+  static dynamic get radio_component_cloudy_selected_border => RadioTokens.selected_border;
+  static dynamic get radio_component_focus => FocusTokens.ring;
+  static dynamic get radio_component_size => 32;
+  static dynamic get card_component_background => CardTokens.background;
+  static dynamic get card_component_background_secondary => SurfaceTokens.secondary;
+  static dynamic get card_component_heading => CardTokens.content;
+  static dynamic get card_component_body => CardTokens.body;
+  static dynamic get card_component_border => CardTokens.border;
+  static dynamic get card_component_radius => 16;
+  static dynamic get card_component_content_padding => 24;
+  static dynamic get card_component_gap => 16;
+  static dynamic get card_component_image_height => 180;
+  static dynamic get top_right_buttons_component_icon => IconTokens.primary;
+  static dynamic get top_right_buttons_component_background => BackgroundTokens.primary;
+  static dynamic get top_right_buttons_component_size => 24;
+}

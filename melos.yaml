@@ -1,0 +1,15 @@
+name: galaxy_workspace
+
+packages:
+  - apps/*
+  - packages/*
+
+scripts:
+  analyze:
+    exec: dart analyze .
+  test:
+    exec: flutter test
+  generate:
+    exec: dart format lib
+    packageFilters:
+      flutter: true
