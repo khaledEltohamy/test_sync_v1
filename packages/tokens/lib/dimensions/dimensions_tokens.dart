@@ -33,12 +33,12 @@ class DimensionTokens {
   static const double width354 = 354;
   static const double width364 = 364;
   static const double width385_67 = 385.6666564941406;
-  static const double width385_667 = 385.66668701171875;
+  static const double width385_67 = 385.66668701171875;
   static const double width402 = 402;
   static const double width412 = 412;
   static const double width430 = 430;
   static const double width433_67 = 433.6666564941406;
-  static const double width433_667 = 433.66668701171875;
+  static const double width433_67 = 433.66668701171875;
   static const double width444 = 444;
   static const double width576 = 576;
   static const double width618_5 = 618.5;
