@@ -1,0 +1,58 @@
+name: Galaxy - Generate Design System
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-design-system:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v4
+
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+
+      - name: Checkout private Galaxy Codegen
+        uses: actions/checkout@v4
+        with:
+          repository: khaledEltohamy/galaxy-design-codegen
+          token: ${{ secrets.GALAXY_CODEGEN_TOKEN }}
+          path: .galaxy/design_codegen
+
+      - name: Install Codegen dependencies
+        working-directory: .galaxy/design_codegen
+        run: dart pub get
+
+      - name: Generate Design System
+        run: |
+          dart run .galaxy/design_codegen/bin/generate_design_system.dart \
+            "$GITHUB_WORKSPACE/token_pipeline/tokens.json" \
+            "$GITHUB_WORKSPACE/packages/design_system/lib" \
+            "$GITHUB_WORKSPACE/apps/example_project_name/lib/generated/pages"
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add packages/design_system
+
+          if [ -d "apps/example_project_name/lib/generated/pages" ]; then
+            git add apps/example_project_name/lib/generated/pages
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+
+          git commit -m "chore: regenerate design system"
+
+          git push
