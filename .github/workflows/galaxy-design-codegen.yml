@@ -41,7 +41,7 @@ jobs:
           dependencies:
             flutter:
               sdk: flutter
-            design_codegen: ^0.0.1
+            design_codegen: ^0.0.2
           EOF
 
       - name: Install design_codegen
