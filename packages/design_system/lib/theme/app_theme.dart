@@ -8,6 +8,18 @@ enum DsBrand {
   base,
 }
 
+/// Backwards-compatible alias for DsTheme.
+/// Older Galaxy scaffolds and hand-written apps used `AppTheme.light()`.
+class AppTheme {
+  const AppTheme._();
+
+  static ThemeData light({DsBrand brand = DsBrand.base}) =>
+      DsTheme.light(brand: brand);
+
+  static ThemeData dark({DsBrand brand = DsBrand.base}) =>
+      DsTheme.dark(brand: brand);
+}
+
 class DsTheme {
   const DsTheme._();
 
