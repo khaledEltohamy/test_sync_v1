@@ -3,9 +3,9 @@ name: Galaxy Design Codegen
 
 on:
   push:
-    paths:
-      - "token_pipeline/tokens.json"
-      - ".github/workflows/galaxy-design-codegen.yml"
+    paths-ignore:
+      - "packages/design_system/lib/**"
+      - "apps/example_project_name/lib/generated/**"
   workflow_dispatch:
 
 permissions:
