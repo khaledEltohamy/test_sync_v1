@@ -23,7 +23,7 @@ packages:
       path: "../../packages/design_system"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.0"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -56,7 +56,7 @@ packages:
       path: "../../packages/tokens"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.0"
   vector_math:
     dependency: transitive
     description:

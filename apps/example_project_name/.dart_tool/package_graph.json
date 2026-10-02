@@ -15,7 +15,7 @@
     },
     {
       "name": "design_system",
-      "version": "0.0.1",
+      "version": "0.0.0",
       "dependencies": [
         "flutter",
         "tokens"
@@ -23,7 +23,7 @@
     },
     {
       "name": "tokens",
-      "version": "0.0.1",
+      "version": "0.0.0",
       "dependencies": [
         "flutter"
       ]
@@ -41,13 +41,13 @@
       ]
     },
     {
-      "name": "vector_math",
-      "version": "2.2.0",
+      "name": "sky_engine",
+      "version": "0.0.0",
       "dependencies": []
     },
     {
-      "name": "sky_engine",
-      "version": "0.0.0",
+      "name": "vector_math",
+      "version": "2.2.0",
       "dependencies": []
     },
     {

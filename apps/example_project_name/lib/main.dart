@@ -9,6 +9,7 @@ class GalaxyExampleApp extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: AppTheme.light(),
-    home: const Scaffold(body: Center(child: AppText('Galaxy generated project'))),
+    home: const Scaffold(
+      body: Center(child: AppText('Galaxy generated project'))),
   );
 }

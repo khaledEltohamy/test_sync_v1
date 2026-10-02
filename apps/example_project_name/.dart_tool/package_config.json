@@ -17,7 +17,7 @@
       "name": "design_system",
       "rootUri": "../../../packages/design_system",
       "packageUri": "lib/",
-      "languageVersion": "3.5"
+      "languageVersion": "3.0"
     },
     {
       "name": "flutter",
@@ -47,7 +47,7 @@
       "name": "tokens",
       "rootUri": "../../../packages/tokens",
       "packageUri": "lib/",
-      "languageVersion": "3.5"
+      "languageVersion": "3.0"
     },
     {
       "name": "vector_math",
