@@ -4,6 +4,8 @@
 class AppRouter {
   const AppRouter._();
 
+  static const String initialRoute = '/login_screen';
+
   static const String loginScreenRoute = '/login_screen';
 
   static const String homeScreenRoute = '/home_screen';
