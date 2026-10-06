@@ -41,7 +41,7 @@
       "name": "tokens",
       "rootUri": "../../tokens",
       "packageUri": "lib/",
-      "languageVersion": "3.5"
+      "languageVersion": "3.0"
     },
     {
       "name": "vector_math",
@@ -53,7 +53,7 @@
       "name": "design_system",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.5"
+      "languageVersion": "3.0"
     }
   ],
   "generator": "pub",

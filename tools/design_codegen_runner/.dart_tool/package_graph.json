@@ -1,0 +1,21 @@
+{
+  "roots": [
+    "design_codegen_runner"
+  ],
+  "packages": [
+    {
+      "name": "design_codegen_runner",
+      "version": "0.0.0",
+      "dependencies": [
+        "design_codegen"
+      ],
+      "devDependencies": []
+    },
+    {
+      "name": "design_codegen",
+      "version": "0.0.6",
+      "dependencies": []
+    }
+  ],
+  "configVersion": 1
+}

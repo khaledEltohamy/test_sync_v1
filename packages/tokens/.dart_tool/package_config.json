@@ -47,7 +47,7 @@
       "name": "tokens",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.5"
+      "languageVersion": "3.0"
     }
   ],
   "generator": "pub",

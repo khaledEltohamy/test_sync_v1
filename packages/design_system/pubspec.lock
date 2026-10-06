@@ -49,7 +49,7 @@ packages:
       path: "../tokens"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.0"
   vector_math:
     dependency: transitive
     description:
@@ -60,4 +60,3 @@ packages:
     version: "2.2.0"
 sdks:
   dart: ">=3.8.0-0 <4.0.0"
-  flutter: ">=3.24.0"
