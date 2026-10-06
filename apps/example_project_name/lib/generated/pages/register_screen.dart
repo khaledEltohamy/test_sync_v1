@@ -26,6 +26,8 @@ class RegisterScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            const SizedBox.shrink(),
+            const SizedBox(height: 16.0),
             AppText(
               'Register Screen',
               style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Arial', fontSize: 16.0, fontWeight: FontWeight.w700),
