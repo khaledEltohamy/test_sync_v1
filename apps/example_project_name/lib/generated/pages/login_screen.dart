@@ -26,6 +26,13 @@ class LoginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Image.asset(
+              'Gemini_Generated_Image_d5pm0dd5pm0dd5pm_1-465_190.jpg',
+              width: 312.0,
+              height: 312.0,
+              fit: BoxFit.fill,
+            ),
+            const SizedBox(height: 16.0),
             AppText(
               'LOGIN',
               style: TextStyle(color: AliasTokens.textPrimary, fontFamily: 'Arial', fontSize: 40.0, fontWeight: FontWeight.w700),
