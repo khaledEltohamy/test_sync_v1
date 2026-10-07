@@ -32,8 +32,9 @@ jobs:
         run: |
           git config user.name "galaxy-bot"
           git config user.email "galaxy-bot@users.noreply.github.com"
-          git add -A -- "packages/design_system/lib"
-          if [ -d "apps/example_project_name/lib/generated/pages" ]; then git add -A -- "apps/example_project_name/lib/generated"; fi
+          # Generation may update design-system, pages, asset files, and pubspec/lock files.
+          # The checkout is clean before generation, so stage all generated changes.
+          git add -A
           if git diff --cached --quiet; then
             echo "No generated changes."
             exit 0
