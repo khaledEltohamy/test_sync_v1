@@ -26,6 +26,8 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            const SizedBox.shrink(),
+            const SizedBox(height: 16.0),
             AppCard(
               image: Container(
                 width: double.infinity,

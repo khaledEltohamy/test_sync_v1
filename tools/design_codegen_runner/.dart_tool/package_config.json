@@ -3,7 +3,7 @@
   "packages": [
     {
       "name": "design_codegen",
-      "rootUri": "file:///Users/khaled.hlemy4413/.pub-cache/hosted/pub.dev/design_codegen-0.0.6",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/design_codegen-0.0.6",
       "packageUri": "lib/",
       "languageVersion": "3.10"
     },
@@ -15,8 +15,6 @@
     }
   ],
   "generator": "pub",
-  "generatorVersion": "3.10.1",
-  "flutterRoot": "file:///Users/khaled.hlemy4413/development/flutter",
-  "flutterVersion": "3.38.3",
-  "pubCache": "file:///Users/khaled.hlemy4413/.pub-cache"
+  "generatorVersion": "3.13.5",
+  "pubCache": "file:///home/runner/.pub-cache"
 }
