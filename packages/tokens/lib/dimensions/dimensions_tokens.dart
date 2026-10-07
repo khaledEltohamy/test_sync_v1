@@ -71,6 +71,7 @@ class DimensionTokens {
   static const double height93 = 93;
   static const double height96 = 96;
   static const double height111 = 111;
+  static const double height127 = 127;
   static const double height141 = 141;
   static const double height146 = 146;
   static const double height150 = 150;
@@ -89,7 +90,6 @@ class DimensionTokens {
   static const double height396 = 396;
   static const double height409 = 409;
   static const double height412 = 412;
-  static const double height455 = 455;
   static const double height514 = 514;
   static const double height516 = 516;
   static const double height576 = 576;
