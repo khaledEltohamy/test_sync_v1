@@ -32,8 +32,13 @@ jobs:
         run: |
           git config user.name "galaxy-bot"
           git config user.email "galaxy-bot@users.noreply.github.com"
-          # Generation may update design-system, pages, asset files, and pubspec/lock files.
-          # The checkout is clean before generation, so stage all generated changes.
+          # Generation can modify:
+          # - design system
+          # - generated pages
+          # - generated routes
+          # - assets
+          # - assets_path.dart
+          # - pubspec/lock files
           git add -A
           if git diff --cached --quiet; then
             echo "No generated changes."
