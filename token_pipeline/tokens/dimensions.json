@@ -74,10 +74,6 @@
       "$type": "number",
       "$value": 108
     },
-    "111": {
-      "$type": "number",
-      "$value": 111
-    },
     "114": {
       "$type": "number",
       "$value": 114
@@ -299,10 +295,6 @@
     "96": {
       "$type": "number",
       "$value": 96
-    },
-    "111": {
-      "$type": "number",
-      "$value": 111
     },
     "127": {
       "$type": "number",
