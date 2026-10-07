@@ -76,6 +76,8 @@ class HomeScreen extends StatelessWidget {
                 ),
             ),
             const SizedBox(height: 16.0),
+            const SizedBox.shrink(),
+            const SizedBox(height: 16.0),
             AppText(
               'Home Screen',
               style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Arial', fontSize: 40.0, fontWeight: FontWeight.w700),
