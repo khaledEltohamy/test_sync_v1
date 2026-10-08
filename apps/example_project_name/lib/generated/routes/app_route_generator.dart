@@ -7,6 +7,7 @@ import 'app_router.dart';
 import '../pages/login_screen.dart';
 import '../pages/home_screen.dart';
 import '../pages/register_screen.dart';
+import '../pages/profile_screen.dart';
 
 class AppRouteGenerator {
   const AppRouteGenerator._();
@@ -38,6 +39,14 @@ class AppRouteGenerator {
           ),
           builder: (context) =>
               const RegisterScreen(),
+        );
+      case AppRouter.profileScreenRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.profileScreenRoute,
+          ),
+          builder: (context) =>
+              const ProfileScreen(),
         );
       default:
         return null;

@@ -12,4 +12,6 @@ class AppRouter {
 
   static const String registerScreenRoute = '/register_screen';
 
+  static const String profileScreenRoute = '/profile_screen';
+
 }
