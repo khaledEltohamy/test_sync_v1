@@ -3,40 +3,31 @@
 
 import 'package:flutter/material.dart';
 import 'package:design_system/design_system.dart';
-import '../routes/app_router.dart';
+import '../../../../../generated/routes/app_router.dart';
+import '../../../../../generated/constants/assets_path.dart';
 
-class RegisterScreen extends StatelessWidget {
-  const RegisterScreen({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AliasTokens.backgroundPrimary,
+      backgroundColor: context.ds.backgroundPrimary,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
           padding: const EdgeInsets.fromLTRB(
             24.0,
-            352.0,
             24.0,
-            95.0,
+            24.0,
+            24.0,
           ),
           child: Column(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const SizedBox.shrink(),
-            const SizedBox(height: 16.0),
-            AppText(
-              'Register Screen',
-              style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Arial', fontSize: 16.0, fontWeight: FontWeight.w700),
-              textAlign: TextAlign.left,
-            ),
-            const SizedBox(height: 16.0),
-            SizedBox(
-              width: 433.66668701171875,
-              child: AppCard(
+            AppCard(
               image: Container(
                 width: double.infinity,
                 height: 180.0,
@@ -45,14 +36,14 @@ class RegisterScreen extends StatelessWidget {
               imageHeight: 180.0,
               contentPadding: const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 24.0),
               topRight: const AppTopRightButtons(),
-              topRightRight: 15.66668701171875,
+              topRightRight: 16.0,
               topRightTop: 16.0,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   AppText(
-                    'Integer posuere erat ante venenatis dapibus porta ac consectetur',
+                    'Title of card',
                     style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Arial', fontSize: 24.0, fontWeight: FontWeight.w700),
                     textAlign: TextAlign.left,
                   ),
@@ -63,21 +54,16 @@ class RegisterScreen extends StatelessWidget {
                     textAlign: TextAlign.left,
                   ),
                   const SizedBox(height: 16.0),
-                  SizedBox(
-                    width: 272.0,
-                    child: AppTextField(
+                  AppTextField(
                     label: 'Label',
                     hintText: 'Placeholder',
                     variant: DsTextFieldVariant.cloudy,
                   ),
-                  ),
                   const SizedBox(height: 16.0),
-                  SizedBox(
-                    width: 272.0,
-                    child: Row(mainAxisSize: MainAxisSize.min, children: [
+                  Row(mainAxisSize: MainAxisSize.min, children: [
                       DsButton(
                         label: 'Label',
-                        variant: DsButtonVariant.secondary,
+                        variant: DsButtonVariant.primary,
                         onPressed: () {},
                       ),
                       const SizedBox(width: 16.0),
@@ -87,10 +73,21 @@ class RegisterScreen extends StatelessWidget {
                         onPressed: () {},
                       ),
                     ]),
-                  ),
                 ],
                 ),
             ),
+            const SizedBox(height: 16.0),
+            Image.asset(
+              n11469206,
+              width: 359.0,
+              height: 359.0,
+              fit: BoxFit.fill,
+            ),
+            const SizedBox(height: 16.0),
+            AppText(
+              'Home Screen',
+              style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Arial', fontSize: 40.0, fontWeight: FontWeight.w700),
+              textAlign: TextAlign.left,
             ),
             const SizedBox(height: 16.0),
             AppCard(
@@ -141,6 +138,56 @@ class RegisterScreen extends StatelessWidget {
                     ]),
                 ],
                 ),
+            ),
+            const SizedBox(height: 16.0),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                24.0,
+                24.0,
+                24.0,
+                24.0,
+              ),
+              child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                AppText(
+                  'Integer posuere erat ante venenatis dapibus porta ac consectetur',
+                  style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Arial', fontSize: 24.0, fontWeight: FontWeight.w700),
+                  textAlign: TextAlign.left,
+                ),
+                const SizedBox(height: 16.0),
+                AppText(
+                  'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.',
+                  style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Arial', fontSize: 16.0, fontWeight: FontWeight.w400),
+                  textAlign: TextAlign.left,
+                ),
+                const SizedBox(height: 16.0),
+                SizedBox(
+                  width: 272.0,
+                  child: AppTextField(
+                  label: 'Label',
+                  hintText: 'Placeholder',
+                  variant: DsTextFieldVariant.cloudy,
+                ),
+                ),
+                const SizedBox(height: 16.0),
+                Row(mainAxisSize: MainAxisSize.min, children: [
+                    DsButton(
+                      label: 'Label',
+                      variant: DsButtonVariant.secondary,
+                      onPressed: () {},
+                    ),
+                    const SizedBox(width: 16.0),
+                    DsButton(
+                      label: 'Label',
+                      variant: DsButtonVariant.primary,
+                      onPressed: () {},
+                    ),
+                  ]),
+              ],
+            ),
             ),
           ],
         ),

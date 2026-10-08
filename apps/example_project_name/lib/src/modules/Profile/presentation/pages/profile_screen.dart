@@ -3,7 +3,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:design_system/design_system.dart';
-import '../routes/app_router.dart';
+import '../../../../../generated/routes/app_router.dart';
+import '../../../../../generated/constants/assets_path.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -11,20 +12,35 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AliasTokens.backgroundPrimary,
+      backgroundColor: context.ds.backgroundPrimary,
       body: SafeArea(
         child: SingleChildScrollView(
+          child: Padding(
+          padding: const EdgeInsets.fromLTRB(
+            45.0,
+            36.0,
+            45.0,
+            480.0,
+          ),
           child: Column(
-          mainAxisSize: MainAxisSize.min,
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Image.asset(
+              geminiGeneratedImageD5pm0dd5pm0dd5pm2480191,
+              width: 312.0,
+              height: 312.0,
+              fit: BoxFit.fill,
+            ),
+            const SizedBox(height: 28.0),
             AppText(
               'Profile Screen',
               style: TextStyle(color: const Color(0xFF000000), fontFamily: 'Arial', fontSize: 16.0, fontWeight: FontWeight.w700),
               textAlign: TextAlign.left,
             ),
           ],
+        ),
         ),
         ),
       ),

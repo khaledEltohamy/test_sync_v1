@@ -3,7 +3,7 @@
   "packages": [
     {
       "name": "design_codegen",
-      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/design_codegen-0.0.6",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/design_codegen-0.0.15",
       "packageUri": "lib/",
       "languageVersion": "3.10"
     },

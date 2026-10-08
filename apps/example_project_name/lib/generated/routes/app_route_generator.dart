@@ -4,10 +4,10 @@
 import 'package:flutter/cupertino.dart';
 
 import 'app_router.dart';
-import '../pages/login_screen.dart';
-import '../pages/home_screen.dart';
-import '../pages/register_screen.dart';
-import '../pages/profile_screen.dart';
+import '../../src/modules/Auth/presentation/pages/login_screen.dart';
+import '../../src/modules/Shell/presentation/pages/home_screen.dart';
+import '../../src/modules/Auth/presentation/pages/register_screen.dart';
+import '../../src/modules/Profile/presentation/pages/profile_screen.dart';
 
 class AppRouteGenerator {
   const AppRouteGenerator._();

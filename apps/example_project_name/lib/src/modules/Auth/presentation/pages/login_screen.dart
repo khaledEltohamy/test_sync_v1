@@ -3,7 +3,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:design_system/design_system.dart';
-import '../routes/app_router.dart';
+import '../../../../../generated/routes/app_router.dart';
+import '../../../../../generated/constants/assets_path.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -11,7 +12,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AliasTokens.backgroundPrimary,
+      backgroundColor: context.ds.backgroundPrimary,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -28,11 +29,16 @@ class LoginScreen extends StatelessWidget {
           children: [
             AppText(
               'LOGIN',
-              style: TextStyle(color: AliasTokens.textPrimary, fontFamily: 'Arial', fontSize: 40.0, fontWeight: FontWeight.w700),
+              style: TextStyle(color: context.ds.textPrimary, fontFamily: 'Arial', fontSize: 40.0, fontWeight: FontWeight.w700),
               textAlign: TextAlign.left,
             ),
             const SizedBox(height: 16.0),
-            const SizedBox.shrink(),
+            Image.asset(
+              n11469206,
+              width: 359.0,
+              height: 359.0,
+              fit: BoxFit.fill,
+            ),
             const SizedBox(height: 16.0),
             SizedBox(
               width: 272.0,
