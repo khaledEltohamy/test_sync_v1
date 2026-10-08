@@ -27,9 +27,21 @@
     "$type": "number",
     "$value": 24
   },
+  "28": {
+    "$type": "number",
+    "$value": 28
+  },
   "32": {
     "$type": "number",
     "$value": 32
+  },
+  "36": {
+    "$type": "number",
+    "$value": 36
+  },
+  "45": {
+    "$type": "number",
+    "$value": 45
   },
   "64": {
     "$type": "number",
@@ -42,5 +54,9 @@
   "352": {
     "$type": "number",
     "$value": 352
+  },
+  "480": {
+    "$type": "number",
+    "$value": 480
   }
 }
