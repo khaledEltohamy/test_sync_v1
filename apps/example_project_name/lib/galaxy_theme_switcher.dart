@@ -21,14 +21,20 @@ class GalaxyThemeSwitcher extends StatelessWidget {
   final Widget? child;
 
   void _open() {
-    // The button lives above the Navigator (MaterialApp.builder), so the sheet
-    // must be opened with the Navigator's own context.
-    final navigatorContext = navigatorKey.currentContext;
+    // The button lives above the Navigator (MaterialApp.builder),
+    // so the sheet must be opened with the Navigator's own context.
+    final navigatorContext =
+        navigatorKey.currentContext;
+
     if (navigatorContext == null) return;
 
     showModalBottomSheet<void>(
       context: navigatorContext,
-      builder: (_) => _SwitcherSheet(brand: brand, mode: mode),
+      builder: (_) =>
+          _SwitcherSheet(
+        brand: brand,
+        mode: mode,
+      ),
     );
   }
 
@@ -42,9 +48,12 @@ class GalaxyThemeSwitcher extends StatelessWidget {
           bottom: 16,
           child: SafeArea(
             child: FloatingActionButton.small(
-              heroTag: 'galaxy-theme-switcher',
+              heroTag:
+                  'galaxy-theme-switcher',
               onPressed: _open,
-              child: const Icon(Icons.palette_outlined),
+              child: const Icon(
+                Icons.palette_outlined,
+              ),
             ),
           ),
         ),
@@ -54,7 +63,10 @@ class GalaxyThemeSwitcher extends StatelessWidget {
 }
 
 class _SwitcherSheet extends StatelessWidget {
-  const _SwitcherSheet({required this.brand, required this.mode});
+  const _SwitcherSheet({
+    required this.brand,
+    required this.mode,
+  });
 
   final ValueNotifier<DsBrand> brand;
   final ValueNotifier<ThemeMode> mode;
@@ -63,23 +75,38 @@ class _SwitcherSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.all(16),
+        padding:
+            const EdgeInsets.all(16),
         child: ListenableBuilder(
-          listenable: Listenable.merge([brand, mode]),
-          builder: (context, _) => Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
+          listenable: Listenable.merge([
+            brand,
+            mode,
+          ]),
+          builder: (context, _) =>
+              Column(
+            mainAxisSize:
+                MainAxisSize.min,
+            crossAxisAlignment:
+                CrossAxisAlignment.start,
             children: [
               const Text('Brand'),
               const SizedBox(height: 8),
               Wrap(
                 spacing: 8,
                 children: [
-                  for (final item in DsBrand.values)
+                  for (
+                    final item
+                        in DsBrand.values
+                  )
                     ChoiceChip(
-                      label: Text(item.name),
-                      selected: brand.value == item,
-                      onSelected: (_) => brand.value = item,
+                      label:
+                          Text(item.name),
+                      selected:
+                          brand.value ==
+                              item,
+                      onSelected: (_) =>
+                          brand.value =
+                              item,
                     ),
                 ],
               ),
@@ -88,12 +115,30 @@ class _SwitcherSheet extends StatelessWidget {
               const SizedBox(height: 8),
               SegmentedButton<ThemeMode>(
                 segments: const [
-                  ButtonSegment(value: ThemeMode.light, label: Text('Light')),
-                  ButtonSegment(value: ThemeMode.dark, label: Text('Dark')),
-                  ButtonSegment(value: ThemeMode.system, label: Text('System')),
+                  ButtonSegment(
+                    value:
+                        ThemeMode.light,
+                    label:
+                        Text('Light'),
+                  ),
+                  ButtonSegment(
+                    value:
+                        ThemeMode.dark,
+                    label:
+                        Text('Dark'),
+                  ),
+                  ButtonSegment(
+                    value:
+                        ThemeMode.system,
+                    label:
+                        Text('System'),
+                  ),
                 ],
                 selected: {mode.value},
-                onSelectionChanged: (value) => mode.value = value.first,
+                onSelectionChanged:
+                    (value) =>
+                        mode.value =
+                            value.first,
               ),
             ],
           ),
