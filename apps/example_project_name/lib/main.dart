@@ -1,18 +1,36 @@
-// galaxy-main: v3
+// galaxy-main: v4
 // Galaxy generated Flutter project.
 // Galaxy refreshes this file only while this marker line exists.
 // Delete the marker line to take ownership and stop Galaxy updating it.
 import 'package:flutter/material.dart';
 import 'package:design_system/design_system.dart';
+import 'galaxy_brand.dart';
+import 'galaxy_theme_switcher.dart';
 import 'generated/routes/app_route_generator.dart';
 import 'generated/routes/app_router.dart';
 
-/// Change these from anywhere (e.g. a settings page) to switch brand / mode.
-/// DsBrand comes from the generated design system, so brands added in Figma
-/// appear here after the next push without editing this file.
-final ValueNotifier<DsBrand> galaxyBrand = ValueNotifier(DsBrand.base);
+/// lib/galaxy_brand.dart decides what this build is:
+///  - ''       -> demo build: every brand is selectable from the in-app switcher.
+///  - 'ocean'  -> white-label build locked to the "ocean" brand (no switcher).
+/// DsBrand is generated from the Figma brand collections, so a brand added in
+/// Figma appears here after the next push without editing this file.
+DsBrand _initialBrand() {
+  final wanted = galaxyLockedBrand
+      .toLowerCase()
+      .replaceAll(RegExp(r'[^a-z0-9]'), '');
+
+  for (final brand in DsBrand.values) {
+    if (brand.name.toLowerCase() == wanted) return brand;
+  }
+
+  return DsBrand.base;
+}
+
+final ValueNotifier<DsBrand> galaxyBrand = ValueNotifier(_initialBrand());
 final ValueNotifier<ThemeMode> galaxyThemeMode =
     ValueNotifier(ThemeMode.system);
+final GlobalKey<NavigatorState> galaxyNavigatorKey =
+    GlobalKey<NavigatorState>();
 
 void main() => runApp(const GalaxyApp());
 
@@ -26,6 +44,7 @@ class GalaxyApp extends StatelessWidget {
       builder: (context, _) => MaterialApp(
         title: 'example_project_name',
         debugShowCheckedModeBanner: false,
+        navigatorKey: galaxyNavigatorKey,
         theme: DsTheme.light(brand: galaxyBrand.value),
         darkTheme: DsTheme.dark(brand: galaxyBrand.value),
         themeMode: galaxyThemeMode.value,
@@ -37,6 +56,19 @@ class GalaxyApp extends StatelessWidget {
             body: Center(child: AppText('No pages generated yet')),
           ),
         ),
+        builder: (context, child) {
+          // White-label build: brand is fixed, no switcher.
+          if (galaxyLockedBrand.isNotEmpty) {
+            return child ?? const SizedBox.shrink();
+          }
+
+          return GalaxyThemeSwitcher(
+            navigatorKey: galaxyNavigatorKey,
+            brand: galaxyBrand,
+            mode: galaxyThemeMode,
+            child: child,
+          );
+        },
       ),
     );
   }
