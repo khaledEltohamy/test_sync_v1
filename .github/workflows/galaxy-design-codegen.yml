@@ -28,6 +28,13 @@ jobs:
           sdk: stable
 
       - name: Generate design system and pages
+        env:
+          # Optional. Create a repository secret named ANTHROPIC_API_KEY and
+          # Claude will classify the few layers the rules cannot decide
+          # (buttons, fields, ...). Results are cached next to tokens.json,
+          # so unchanged layers are never sent again. Without the secret the
+          # generator works exactly as before.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: bash scripts/generate_design.sh
 
       - name: Commit generated files

@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "assets": [
     {
       "imageHash": "82847dc402e9394551cb644337ac5d24a13a2458",
@@ -12,6 +12,20 @@
     {
       "imageHash": "eae313a48883a46e7a2a60ee806e73a8052191be",
       "path": "10-9_28.png"
+    }
+  ],
+  "icons": [
+    {
+      "nodeId": "6:42",
+      "path": "icon-type_close-6_42.svg"
+    },
+    {
+      "nodeId": "I9:959;2075:1262",
+      "path": "icon-top-right-buttons-I9_959_2075_1262.svg"
+    },
+    {
+      "nodeId": "6:97",
+      "path": "icon-top-right-buttons-6_97.svg"
     }
   ]
 }

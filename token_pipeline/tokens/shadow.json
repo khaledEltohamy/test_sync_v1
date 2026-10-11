@@ -1,1 +1,24 @@
-{}
+{
+  "0": {
+    "x": {
+      "$type": "number",
+      "$value": 0
+    },
+    "y": {
+      "$type": "number",
+      "$value": 4
+    },
+    "radius": {
+      "$type": "number",
+      "$value": 32
+    },
+    "spread": {
+      "$type": "number",
+      "$value": 0
+    },
+    "color": {
+      "$type": "color",
+      "$value": "#000000"
+    }
+  }
+}
